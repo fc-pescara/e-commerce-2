@@ -1,0 +1,205 @@
+*, ::before ,::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+   
+}
+   
+body {
+    overflow-x: hidden;
+    flex-direction: column;
+    display: flex;
+    background: #f1f1f1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400,700;
+
+}
+
+
+/***** NAVIGATION RESPONSIVE *****/
+   
+.world {
+    transform: translate(275%,20%);
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+position: absolute;
+font-weight: bold;
+}
+
+
+   .navigation {
+        height: 70px;
+        width: 100%;
+        background: rgb(255, 255, 255);
+        
+    
+}
+
+.liste-nav {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+.item-nav {
+    display: inline-block;
+    line-height: 70px;
+    font-size: 25px;
+    margin: 0 10px;
+    cursor: pointer;
+    transform: translate(-250px,-13px);
+}
+
+.item-nav a {
+    text-decoration:  none;
+    color : #b6b2b2;
+    font-size: 13px;
+
+}
+
+
+.hamburger {
+    position: absolute;
+    top : 15px ;
+    right: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.button img {
+    width: 40px;
+    
+}
+
+@media  screen and (max-width :  550px) {
+    .hamburger {
+        display: block;
+    }
+    nav {
+        border-bottom: 1px solid #f1f1f1;
+    }
+    .liste-nav {
+        position: relative;
+        top:70px ;
+        display: none;
+    }
+    .item-nav {
+        display: block;
+        background: #333;
+        margin: 0;
+    }
+    .liste-nav.active-menu {
+        display: block;
+    }
+}
+
+
+
+.cadie {
+    cursor: pointer;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.client {
+cursor: pointer;
+    height: 50px;
+    transform: translate(-62%,5);
+}
+.espaceclients {
+    transform: translate(670px,-65px);
+}
+
+/**** NAVIGATION RESPONSIVE ****/
+
+/**** CONTAINER ****/
+
+.container {
+    width: 100%;
+   
+}
+.ImageDeBase {
+    border-radius: 25px;
+    max-width: 100%;
+    transform: translate(50%,25%);
+    height: 500px;
+    flex-shrink: 0;
+}
+
+.ContainerInfo {
+line-height: 35px;
+    transform: translate(850px,-380px);
+}
+
+.Titre1 {
+    letter-spacing: 3px;
+    color:  hsl(26, 100%, 55%);
+}
+
+.Titre2 {
+    line-height: 40px;
+    letter-spacing: 2px;
+    font-size: 35px;
+}
+
+.Prix {
+    font-size: 18px;
+    font-weight: bold;
+    transform: translate(0px,-20px);
+}
+
+.Pourcentage {
+    transform: translate(90px,-55px);
+    width: 30px;
+    background-color: rgb(217, 220, 223);
+    color:  hsl(26, 100%, 55%);
+
+}
+
+.PrixAvant {
+    transform: translate(0px,-50px);
+    text-decoration:line-through;
+    color: #b6b2b2;
+    font-weight: bold;
+}
+
+.NumberArticle {
+    height: 30px;
+    width: 30px;
+}
+
+.BtnAddArticle {
+    border-radius: 7px;
+    width: 110px;
+    height: 65px;
+    transform: translate(195px,-120px);
+    width: 300px;
+    background-color: orange;
+}
+
+.Cadie2 {
+    
+    
+    transform: translate(56px,22px);
+}
+
+.Btnadd {
+    transform: translate(0px,-17px);
+    text-align: right;
+    width: 200px;
+    
+}
+
+.IconsNega {
+    transform: translate(-0px,-57px);
+}
+
+.IconsPlus {
+    transform: translate(9px,-54px);
+}
+
+.NumberArticle {
+    transform: translate(5px,-55px);
+}
